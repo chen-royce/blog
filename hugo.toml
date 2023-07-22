@@ -1,6 +1,6 @@
 baseURL = 'https://buffguycodes.com/'
 languageCode = 'en-us'
-title = 'ROYCE CHEN'
+title = 'Buff Guy Codes'
 
 [menu]
   [[menu.main]]
