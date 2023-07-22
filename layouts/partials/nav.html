@@ -1,14 +1,18 @@
 <header>
     <nav>
         <ul class="parent">
-            <li class="home-button">
-                <a href="{{ .Site.BaseURL }}">BUFF GUY CODES</a>
-            </li>
+            <a href="{{ .Site.BaseURL }}">
+                <li class="home-button">
+                BUFF GUY CODES
+                </li>
+            </a>
             <ul class="child">
                 {{ range.Site.Menus.main }}
-                <li>
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                </li>
+                <a href="{{ .URL }}">
+                    <li>
+                        {{ .Name }}
+                    </li>
+                </a>
                 {{ end }}
             </ul>
         </ul>

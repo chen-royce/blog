@@ -5,7 +5,7 @@
 nav {
     & ul {
         display: flex;
-        padding: 5px;
+        padding: 0px;
         justify-content: space-between;
 
         /* omit bullet points */
@@ -19,20 +19,22 @@ nav {
         & a {
             /* omit hyperlink underlines */
             text-decoration: none;
-        }
+            padding: 5px 10px;
 
-        & li {
-            padding: 5px 0px;
+            /* center text vertically */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         & ul.child {
-            width: 100px;
+            width: 130px;
         }
     }
 }
 
 main {
-    margin: 5px;
+    margin: 10px;
 }
 
 footer {
