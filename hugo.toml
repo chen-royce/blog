@@ -11,6 +11,18 @@ title = 'ROYCE CHEN'
 
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "About me"
     url = "/about"
     weight = 2
+
+  [[menu.main]]
+    identifier = "Links"
+    name = "Links"
+    url = "/links"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume"
+    weight = 4
