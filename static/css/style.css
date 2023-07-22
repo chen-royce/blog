@@ -1,5 +1,10 @@
-* {
+*:not(a) {
+    /* 
+    Default font and color for site
+    Note: May be overridden for specific areas 
+    */
     font-family:Arial, Helvetica, sans-serif;
+    color: #404040;
 }
 
 nav {
@@ -28,7 +33,7 @@ nav {
         }
 
         & ul.child {
-            width: 130px;
+            width: 300px;
         }
     }
 }
