@@ -2,7 +2,8 @@
 
 {{ .Content }}
 
-{{ range.Data.Pages }}
+<h2>Check out new posts</h2>
+{{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 <h3>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 </h3>
