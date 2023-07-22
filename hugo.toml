@@ -1,4 +1,14 @@
 baseURL = 'https://buffguycodes.com/'
 languageCode = 'en-us'
 title = 'ROYCE CHEN'
-sectionPagesMenu = 'main'
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
