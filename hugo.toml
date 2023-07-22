@@ -1,5 +1,4 @@
 baseURL = 'https://buffguycodes.com/'
 languageCode = 'en-us'
 title = 'ROYCE CHEN'
-theme = 'buffguycodes'
 sectionPagesMenu = 'main'
