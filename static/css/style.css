@@ -17,12 +17,15 @@ body {
 }
 
 nav {
+    padding: 5px 0;
     border: 1px solid #404040;
     background-color: #404040;
 
     & ul {
+        margin: auto;
+        padding: 0;
+        max-width: 1200px;
         display: flex;
-        padding: 0px;
         justify-content: space-between;
 
         /* omit bullet points */
@@ -55,13 +58,16 @@ nav {
         }
 
         & ul.child {
-            width: 320px;
+            margin: 0;
+            width: 350px;
         }
     }
 }
 
 main {
-    margin: 10px;
+    margin: auto;
+    padding: 10px;
+    max-width: 1200px;
 }
 
 pre {
