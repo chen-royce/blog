@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-*:not(a) {
+*:not(a):not(code) {
     /* 
     Default font and color for site
     Note: May be overridden for specific areas 
@@ -62,6 +62,24 @@ nav {
 
 main {
     margin: 10px;
+}
+
+pre {
+    background-color: #303030;
+    border-radius: 7px;
+    overflow-x: auto;
+    overflow:   scroll;
+    display: block;
+    padding: 1.5em;
+    white-space: pre;
+    line-height: 1.75;
+    
+    & span {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: .9rem;
+    }
+
 }
 
 footer {
