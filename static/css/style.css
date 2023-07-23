@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 *:not(a) {
     /* 
     Default font and color for site
@@ -7,7 +11,15 @@
     color: #404040;
 }
 
+body {
+    /* Remove white space surrounding page */
+    margin: 0px;
+}
+
 nav {
+    border: 1px solid #404040;
+    background-color: #404040;
+
     & ul {
         display: flex;
         padding: 0px;
@@ -16,9 +28,8 @@ nav {
         /* omit bullet points */
         list-style-type: none; 
 
-        & .home-button {
-            font-size: 24px;
-            font-weight: bold;
+        & li {
+            color: white;
         }
 
         & a {
@@ -32,8 +43,19 @@ nav {
             justify-content: center;
         }
 
+        & a:hover {
+            & li {
+                color: #A0A0A0;
+            }
+        }
+
+        & .home-button {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
         & ul.child {
-            width: 300px;
+            width: 320px;
         }
     }
 }
