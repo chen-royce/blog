@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<h2>404: Page not found!</h2>
+<p>If you'd like, check out my most recent blog posts instead:</p>
+{{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+<h4>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</h4>
+{{ end }}
+
+{{ partial "footer.html" . }}
