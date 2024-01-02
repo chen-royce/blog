@@ -1,12 +1,148 @@
 {{ partial "metadata.html" . }}
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/common.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/resume.css" type="text/css" media="all" />
 </head>
 
 <body>
     {{ partial "nav.html" . }}
     <main>
 
-        <h1>Royce Chen</h1>
-        <h2>Software engineer</h2>
+        <h1>Resume</h1>
+        <h2>Royce Chen | Software Engineer</h2>
+        <h3 class="section-header">EXPERIENCE</h3>
+        <div class="space-between workplace">
+            <div>
+                RVO Health (formerly Red Ventures)
+            </div>
+            <div>
+                Charlotte, NC
+            </div>
+        </div>
+        <div class="space-between title">
+            <div>
+                Software Engineer - Senior Associate
+            </div>
+            <div>
+                July 2023 – Present
+            </div>
+        </div>
+        <div class="space-between title">
+            <div>
+                Software Engineer - Associate
+            </div>
+            <div>
+                March 2022 – July 2023
+            </div>
+        </div>
+        <ul>
+            <li>
+                Use Go, Terraform, CDK, Amazon Web Services (AWS), SQL, and CI/CD (CircleCI) to deliver code in an
+                agile
+                environment for the REST API that enables Novant Health’s patients to search for and book care
+                online
+            </li>
+            <li>
+                Improved existing database and ETL processes by implementing event-driven, queue-based architecture
+                for
+                scalability, migrating from MySQL to PostgreSQL, setting up associated schema and data models, and
+                automating schema migrations
+            </li>
+            <li>
+                Refactored application cache from existing in-memory to an AWS ElastiCache Redis cluster,
+                eliminating
+                coupling between application containers and data, reducing discrepancies between container instances
+                and
+                increasing cache availability
+            </li>
+            <li>
+                Improved monitoring and alerting by integrating Datadog and PagerDuty metrics, alerts, and
+                dashboards
+                and adding data checks to key partner data ETLs, which salvaged $50k+ worth of appointments from
+                being
+                lost due to missing data
+            </li>
+            <li>
+                Lead and facilitate technical architecture discussions to increase application performance and
+                availability
+            </li>
+            <li>
+                Mentor and develop junior engineers; currently leading an organization-wide training on data
+                structures
+                and algorithms
+            </li>
+        </ul>
+        <div class="space-between workplace">
+            <div>
+                Red Ventures
+            </div>
+            <div>
+                Charlotte, NC
+            </div>
+        </div>
+        <div class="space-between title">
+            <div>
+                Web Publisher
+            </div>
+            <div>
+                December 2020 – March 2022
+            </div>
+        </div>
+        <ul>
+            <li>
+                Used HTML, CSS, and CMS tools to format, upload, and update WordPress content for Bankrate and
+                CreditCards.com, increasing content output by ~49% in less than 3 months
+            </li>
+            <li>
+                Coordinated creative, engineering, compliance, SEO, and business teams to plan, QA, and deploy
+                creative
+                and technical projects spanning publishing, site health, and more, such as a sitewide audit of
+                semantic
+                HTML and linking practices
+            </li>
+            <li>
+                Trained 4 junior team members on HTML and WordPress and created procedural documentation for
+                business
+                and publishing processes to promote tech literacy and cross-training within the business
+            </li>
+        </ul>
+
+        <h3 class="section-header">SKILLS & TECHNOLOGIES</h3>
+        <h4>Familiar</h4>
+        <p>
+            Go (Golang), Amazon Web Services (AWS), cloud computing (AWS Lambda, ECS, EC2), REST APIs,
+            Redis, SQL
+            (MySQL/PostgreSQL), backend web development, JavaScript, HTML/CSS, documentation
+            (OpenAPI/Swagger), agile
+        </p>
+        <h4>Exposure</h4>
+        <p>
+            Python, Terraform, CDK, infrastructure, infrastructure as code (IAC), CI/CD pipelines
+            (CircleCI,
+            GitHub Actions), test-driven development, monitoring and alerting (Datadog, AWS CloudWatch,
+            PagerDuty),
+            Docker,NoSQL, Node.JS, Unix
+        </p>
+
+        <h3 class="section-header">EDUCATION</h3>
+        <div class="space-between education">
+            <div>
+                Davidson College
+            </div>
+            <div>
+                Davidson, NC
+            </div>
+        </div>
+        <div class="space-between">
+            <div>
+                Bachelor of Arts in English, Minor in Computer Science
+            </div>
+            <div>
+                May 2020
+            </div>
+        </div>
+
+        <h3 class="section-header">LANGUAGES</h3>
+        English (U.S. native citizen), Mandarin Chinese
+
 
         {{ partial "footer.html" . }}
