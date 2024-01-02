@@ -7,7 +7,7 @@
     Default font and color for site
     Note: May be overridden for specific areas 
     */
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #404040;
 }
 
@@ -24,12 +24,12 @@ nav {
     & ul {
         margin: auto;
         padding: 0;
-        max-width: 1200px;
+        max-width: 800px;
         display: flex;
         justify-content: space-between;
 
         /* omit bullet points */
-        list-style-type: none; 
+        list-style-type: none;
 
         & li {
             color: white;
@@ -67,19 +67,19 @@ nav {
 main {
     margin: auto;
     padding: 10px;
-    max-width: 1200px;
+    max-width: 800px;
 }
 
 pre {
     background-color: #303030;
     border-radius: 7px;
     overflow-x: auto;
-    overflow:   scroll;
+    overflow: scroll;
     display: block;
     padding: 1.5em;
     white-space: pre;
     line-height: 1.75;
-    
+
     & span {
         font-family: 'Courier New', Courier, monospace;
         color: white;
