@@ -1,6 +1,12 @@
-{{ partial "header.html" . }}
+{{ partial "metadata.html" . }}
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+</head>
 
-<h1>Royce Chen</h1>
-<h2>Software engineer</h2>
+<body>
+    {{ partial "nav.html" . }}
+    <main>
 
-{{ partial "footer.html" . }}
+        <h1>Royce Chen</h1>
+        <h2>Software engineer</h2>
+
+        {{ partial "footer.html" . }}

@@ -1,18 +1,24 @@
-{{ partial "header.html" . }}
+{{ partial "metadata.html" . }}
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+</head>
 
-<h1>Links</h1>
-<h2>Places to find me</h2>
-<ul>
-    <li><a href="../resume">Resume</a></li>
-    <li><a href="https://github.com/chen-royce" target="_blank">GitHub</a></li>
-    <li><a href="https://linkedin.com/in/royce-y-chen" target="_blank">LinkedIn</a></li>
-    <li><a href="https://instagram.com/buffguycodes" target="_blank">Instagram</a></li>
-    <li><a href="https://twitter.com/buffguycodes" target="_blank">Twitter</a></li>
-</ul>
-<h2>Things I've worked on</h2>
-<ul>
-    <li>Halfway There</li>
-    <li>Competitive programming</li>
-</ul>
+<body>
+    {{ partial "nav.html" . }}
+    <main>
 
-{{ partial "footer.html" . }}
+        <h1>Links</h1>
+        <h2>Places to find me</h2>
+        <ul>
+            <li><a href="../resume">Resume</a></li>
+            <li><a href="https://github.com/chen-royce" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/royce-y-chen" target="_blank">LinkedIn</a></li>
+            <li><a href="https://instagram.com/buffguycodes" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/buffguycodes" target="_blank">Twitter</a></li>
+        </ul>
+        <h2>Things I've worked on</h2>
+        <ul>
+            <li>Halfway There</li>
+            <li>Competitive programming</li>
+        </ul>
+
+        {{ partial "footer.html" . }}

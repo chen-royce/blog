@@ -1,16 +1,22 @@
-{{ partial "header.html" . }}
+{{ partial "metadata.html" . }}
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+</head>
 
-{{ .Content }}
+<body>
+    {{ partial "nav.html" . }}
+    <main>
 
-<h2>Check out new posts</h2>
-{{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-<h3>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-</h3>
-<p>{{ .Description }}</p>
-<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-    {{ .Date.Format "January 2, 2006" }}
-</time>
-{{ end }}
+        {{ .Content }}
 
-{{ partial "footer.html" . }}
+        <h2>Check out new posts</h2>
+        {{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+        <h3>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        <p>{{ .Description }}</p>
+        <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date.Format "January 2, 2006" }}
+        </time>
+        {{ end }}
+
+        {{ partial "footer.html" . }}

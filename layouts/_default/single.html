@@ -1,7 +1,13 @@
-{{ partial "header.html" . }}
+{{ partial "metadata.html" . }}
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+</head>
 
-<h1>{{ .Title }}</h1>
+<body>
+    {{ partial "nav.html" . }}
+    <main>
 
-{{ .Content }}
+        <h1>{{ .Title }}</h1>
 
-{{ partial "footer.html" . }}
+        {{ .Content }}
+
+        {{ partial "footer.html" . }}

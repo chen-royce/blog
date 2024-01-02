@@ -1,13 +1,19 @@
-{{ partial "header.html" . }}
+{{ partial "metadata.html" . }}
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+</head>
 
-{{ .Content }}
+<body>
+    {{ partial "nav.html" . }}
+    <main>
 
-<h2>404: Page not found!</h2>
-<p>If you'd like, check out my most recent blog posts instead:</p>
-{{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-<h4>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-</h4>
-{{ end }}
+        {{ .Content }}
 
-{{ partial "footer.html" . }}
+        <h2>404: Page not found!</h2>
+        <p>If you'd like, check out my most recent blog posts instead:</p>
+        {{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+        <h4>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h4>
+        {{ end }}
+
+        {{ partial "footer.html" . }}
